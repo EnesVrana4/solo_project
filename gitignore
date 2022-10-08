@@ -8,9 +8,9 @@
 !.vscode/launch.json
 !.vscode/extensions.json
 !.vscode/*.code-snippets
-/Migrations/*
-/obj/*
-/bin/*
+Migrations/*
+obj/*
+bin/*
 
 # Local History for Visual Studio Code
 .history/
