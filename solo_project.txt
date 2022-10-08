@@ -1,0 +1,21 @@
+Solo project 
+This project is an idea of creating a App to connect people with the same intensions, in this
+specific case, helping people in need and helping the ones who have lost hope, reminding us that
+we all are Humans in the end of the day and we all need each other. 
+This App will get you to login or register (create an account), than in the homepage will be all 
+the cases of people/ familes that are in need of something and need us(ex. "homeless","Sickness",
+"elderly care need", ect). From there, after seeing the problem tittle and the city it is, if we 
+are interested we can read more about that particular case and after reading the description, we
+can choose to help them if we can. After pressing the button " Offer Help, we will be added to a group
+chat which will be for this tematics. There may be a lot of people also wishing to offer help so we
+can discuss with them and chose what to do to help them , depending on the need they have and the 
+oppertunities that we have to offer help to them. Some may offer to go to visit the family, gather
+together a few people from the grouchat members and buy some foods or other things that are a Must
+for each family, some other may offer to go and take care of the elderly that really need help in that,
+some might want to open a bank account in the family's name, if they need it, and let them take from 
+the bank a little amount each month like a salery. 
+Also there everyone can post a report about a family in need they are aware about, and let other people
+offer help and show that in the end of the day, our hearts are still the same and stresses and problems 
+of the days can't make us forget who we are and forget the fact that we will always be here for each other.
+Life is still good when there are good people in it, and thankfully,there are!
+Thank You

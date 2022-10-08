@@ -1,0 +1,46 @@
+<head>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PeopleForPeople.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+</head>
+<header class="HEADER">
+        <nav class="nav-head">
+            <div class="container-fluid HEADER display-flex ">
+                <a class="navbar-brand pfp vertical-align-bottom" asp-area="" asp-controller="Home" asp-action="HomePage">PFP</a>
+                <div class="display-flex vertical-align-middle">
+                    <a href="/Case/Add" class="navbar-brand pfp vertical-align-middle" id="createcase">Report a Case</a>
+                    <a href="/Chats" class="navbar-brand pfp "  id="inbox">
+                        <i class="fa fa-inbox" ></i>
+                    </a>
+                    <a href="/Logout" class="navbar-brand pfp "  id="logout">
+                        <span class="glyphicon glyphicon-log-out" id="logout" ></span>
+                    </a>
+                </div>
+                
+            </div>
+        </nav>
+</header>
+    @if (ViewBag.chatsOfUser.Count == 0)
+    {
+        <h3 id="empty">- No Chats Yet -</h3>
+        
+    }
+    @foreach (var chat in ViewBag.chatsOfUser)
+    {
+        <nav class="post-nav display-flex vertical-align-middle space-between">
+            <div class="">
+                <h4>@chat.ConnectedWith.FamilySurname Family , @chat.ConnectedWith.Tittle</h4>
+                <p>Case created at @chat.ConnectedWith.CreatedAt</p>
+            </div>
+            <div id="delete">        
+                <a href="/Chat/@chat.CaseId" class="btn btn-primary ">Open Chat</a>
+            </div>
+        </nav>
+        
+    }

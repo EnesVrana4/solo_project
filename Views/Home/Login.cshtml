@@ -1,0 +1,54 @@
+@model LoginUser
+
+<head>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PeopleForPeople.styles.css" asp-append-version="true" />
+    
+</head>
+<header class="HEADER">
+        <nav class="nav-head">
+            <div class="container-fluid HEADER">
+                <a class="navbar-brand pfp" asp-area="" asp-controller="Home" asp-action="HomePage">People For People</a>
+            </div>
+        </nav>
+</header>
+<div class="display-flex">
+    <div class="container2">
+        <form action="/Login" method="post">
+            <label class="display-4 text-left">Login!</label>
+        <br>
+        <br>
+            <div class="row mb-4">
+                <div class="col-8">
+                    <div class="form-outline">
+                        <label class="form-label"  asp-for="Email" >Email: </label>
+                        <input  class="form-control" asp-for="Email" placeholder="Write your Email"/>
+                        <span asp-validation-for="Email"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-8">
+                    <div class="form-outline">
+                        <label class="form-label" asp-for="Password">Password: </label>
+                        <input  class="form-control" asp-for="Password" placeholder="Write your Password" />
+                        <span asp-validation-for="Password" ></span>
+                    </div>
+                </div>
+            </div>
+        
+            
+
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4 col-8">Login</button><br>
+            <a href="/Register">Don't have an account? Sign Up Here!</a>
+
+            
+        </form>
+    </div>
+</div>
+<img id="logo" src="~/Images/02917c76-8724-4a99-a0f6-23df22d80267-logo-PFP.png"    asp-append-version="true" alt="">
+

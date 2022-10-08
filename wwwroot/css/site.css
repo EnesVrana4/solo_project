@@ -1,0 +1,338 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 80px;
+  background-color: rgb(194, 231, 255);
+}
+.pfp{
+  font-size: 40px;
+  font-family: cursive;
+  font-weight: bold;
+  margin-left: 140px;
+  width: 800px;
+  margin: 0 auto;
+  color: white;
+}
+.container{
+  background-color:rgb(240, 252, 255);
+}
+.container2{
+  padding: 25px;
+  width: 400px;
+  
+
+}
+.BigDiv{
+  background-color: rgb(73, 73, 145);
+  margin-bottom: -20px;
+}
+.BigDiv label{
+  color: white;
+}
+.BigDiv button{
+  background-color: rgb(139, 139, 217);
+}
+
+.uploadpic input{
+  height: fit-content;
+}
+.uploadpic{
+  height: fit-content;
+}
+.uploadpic label{
+  color: black;
+}
+.FOOTER{
+  width: 800px;
+  margin:  auto;
+  padding: 0px;
+}
+
+
+
+.nav-head{
+  width: 800px;
+  
+  margin: 0 auto;
+  background: repeating-linear-gradient(
+  45deg,
+  #606dbc,
+  #606dbc 5px,
+  #465298 10px,
+  #465298 5px
+);
+}
+  
+
+.logo{
+  width: 300px;
+  height: 300px;
+}
+.logo.img{
+  max-width: fit-content;
+}
+.display-inline{
+  display: inline;
+}
+
+.display-flex{
+  display: flex;
+}
+.space-between{
+  justify-content: space-between;
+}
+.space-around{
+  justify-content: space-around;
+}
+.align-center{
+  align-items: center;
+}
+.vertical-align-middle{
+  vertical-align: middle;
+}
+#createcase{
+  font-size: 20px;
+  margin-left: 400px;
+  margin-right: -145px ;
+  padding-right: -100px;
+}
+#logout{
+  font-size: 20px;
+  margin-left: -400px;
+  padding-left: 40px;
+  padding-right: 40px
+}
+#inbox{
+  font-size: 20px;
+  margin-left: -500px;
+  padding-left: 40px;
+  margin-right: 20px
+}
+.case{
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid #92baac;
+  border-radius: 10px;
+  background:
+  linear-gradient(135deg, #e1ebbd 21px, #92baac  22px, #92baac  24px, transparent 24px, transparent 67px, #92baac  67px, #92baac  69px, transparent 69px),
+  linear-gradient(225deg, #e1ebbd 21px, #92baac  22px, #92baac  24px, transparent 24px, transparent 67px, #92baac  67px, #92baac  69px, transparent 69px)0 64px;
+  background-color:#e1ebbd;
+  background-size: 64px 128px;  
+}
+.post-nav{
+  margin: 20px;
+  background-color: rgb(237, 237, 237);
+  padding: 2px 15px;
+  border: 1px solid #92baac;
+  border-radius: 5px;
+}
+.post-nav label{
+  text-decoration: underline;
+}
+.post-nav h4{
+  font-weight: bold;
+}
+#postedby{
+  color: grey;
+}
+.case-content{
+  margin: 20px;
+  width: auto;
+
+}
+.case-content h4{
+  font-weight: bold;
+  width: fit-content;
+  padding: 8px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: white;
+  margin-bottom: 0px;
+  border: 2px solid #92baac ;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.case-content p{
+  font-style: italic;
+}
+#moreaboutthis{
+
+  margin-left: 520px;
+  font-size: large;
+  background-color:#f1f5e3;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #92baac;
+}
+.case-content h5{
+  color: grey;
+  width: fit-content;
+  padding: 8px;
+  margin-top: 0px;
+  background-color:#f1f5e3;
+  border: 2px solid #92baac ;
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#delete{
+  padding: 20px;
+}
+#case-address{
+  font-size: medium;
+  font-style: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 10px;
+}
+.thecase{
+  background:
+  linear-gradient(135deg, #e1ebbd 21px, #92baac  22px, #92baac  24px, transparent 24px, transparent 67px, #92baac  67px, #92baac  69px, transparent 69px),
+  linear-gradient(225deg, #e1ebbd 21px, #92baac  22px, #92baac  24px, transparent 24px, transparent 67px, #92baac  67px, #92baac  69px, transparent 69px)0 64px;
+  background-color:#e1ebbd;
+  background-size: 64px 128px; 
+}
+.background-white{
+  background-color: white;
+}
+#description{
+  margin: 20px 0px;
+  padding: 20px;
+  background-color: rgb(240, 255, 251);
+  padding: 2px 15px;
+  border-radius: 5px;
+}
+#RemoveUserFromChat_Button{
+  margin-left: 530px;
+}
+#messagesdiv{
+  width: auto;
+
+  background-color: hsl(34, 53%, 82%);
+  background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+    hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+    hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+    hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+    hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+    hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5) 120px, hsla(197, 62%, 11%, 0.5) 140px
+    ),
+  repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+    hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+    hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+    hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+    hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+    hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px
+);
+padding: 0px 0px 30px 0px;
+margin-bottom: -40px;
+border-bottom-left-radius: 30px;
+border-bottom-right-radius: 30px;
+}
+.textsize {
+  font-size: 20px;
+}
+#thecase-description{
+
+}
+
+#MessageFromMe{
+  margin: 10px 10px 0px auto ;
+  width: fit-content;
+  max-width: 70%;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: white;
+  padding: 4px 15px;
+  
+
+}
+#MessageFromMe h5 ,#MessageFromMe p{
+  text-align: right;
+}
+#MessageFromOthers{
+  margin: 10px auto 0px 10px ;
+  width: fit-content;
+  max-width: 70%;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: white;
+  padding: 4px 15px;
+}
+#messagesdiv h5{
+  font-weight: bold;
+  font-family: cursive;
+}
+.sendmessage{
+margin: 0px 0px 0px 20%;
+padding-top: 15px;
+}
+.sendmessage textarea{
+  padding: 15px;
+  border: 1px solid black;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.sendmessage button{
+  padding: 15px 20px 15px 15px;
+  border: 1px solid black;
+  height: fit-content;  
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.time{
+  font-size: 11px;
+  color: rgb(152, 152, 152);
+}
+#pic{
+  margin-left: 10%;
+  max-width: 80%;
+  padding:5% 15%;
+  background-color: #f1f5e3;
+  border-radius: 40px;
+  border: 2px solid #92baac;
+}
+#Thecase-Description{
+
+    margin:0% 10% 5% 10%;
+  
+    
+    padding:1% 1%;
+    background-color: #f1f5e3;
+    border-radius: 4px;
+    border: 2px solid #92baac;
+  }
+
+  #empty{
+    text-align: center;
+  }
+  #empty-messages{
+    width: fit-content;
+    background-color: beige;
+    padding: 1%;
+    border-radius: 2px;
+    margin-left: 35%;
+
+  }
+  #logo{
+    width: 350px;
+    position: absolute;
+    right: 250px;
+    top: 200px;
+    background-color: white;
+    border-radius: 100%;
+  }

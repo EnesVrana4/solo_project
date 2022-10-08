@@ -1,0 +1,65 @@
+@model Case
+
+
+<head>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PeopleForPeople.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+</head>
+<header class="HEADER">
+        <nav class="nav-head">
+            <div class="container-fluid HEADER display-flex ">
+                <a class="navbar-brand pfp vertical-align-bottom" asp-area="" asp-controller="Home" asp-action="HomePage">PFP</a>
+                <div class="display-flex vertical-align-middle">
+                    <a href="/Case/Add" class="navbar-brand pfp vertical-align-middle" id="createcase">Report a Case</a>
+                    <a href="/Chats" class="navbar-brand pfp "  id="inbox">
+                        <i class="fa fa-inbox" ></i>
+                    </a>
+                    <a href="/Logout" class="navbar-brand pfp "  id="logout">
+                        <span class="glyphicon glyphicon-log-out" id="logout" ></span>
+                    </a>
+                </div>                
+            </div>
+        </nav>
+</header>
+
+<div class="case thecase">
+        <nav class="post-nav display-flex vertical-align-middle space-between ">
+            <div class="">
+                <h4>@ViewBag.theCase.FamilySurname Family, @ViewBag.theCase.Tittle</h4>
+                <p id="postedby">Posted by <label>@ViewBag.theCase.Creator.FirstName @ViewBag.theCase.Creator.LastName</label> at @ViewBag.theCase.CreatedAt</p>
+            </div>
+            <div id="delete">
+                
+            @if (@ViewBag.theCase.UserId == @ViewBag.iLoguari.UserId)
+                {
+                    <a href="/Case/Delete/@ViewBag.theCase.CaseId" class="btn btn-primary ">Delete</a>
+                }
+            </div>
+        </nav>
+        <div class="case-content">
+            <h4>Address: @ViewBag.theCase.Address</h4>
+            <h5>@ViewBag.theCase.City City</h5>
+            <div>
+                <img id="pic" src="~/Images/@ViewBag.theCase.Myimage"    asp-append-version="true" alt="">
+            </div><br>
+            <p id="Thecase-Description">Description: <br>@ViewBag.theCase.Description</p>
+
+        
+            @foreach (var chat in @ViewBag.CaseChatWithUsers)
+            {
+                @if (chat.UserId == @ViewBag.iLoguari.UserId)
+                {
+                    <a href="/RemoveUserFromChat/@ViewBag.theCase.CaseId" class="btn btn-primary textsize" id="RemoveUserFromChat_Button">I'm done here</a><br><br>
+                    return ;
+                }
+            }
+                <a href="/AddUserToChat/@ViewBag.theCase.CaseId" class="btn btn-primary textsize " id="RemoveUserFromChat_Button">Offer Help</a><br><br>
+        </div>
+    </div>

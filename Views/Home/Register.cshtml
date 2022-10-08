@@ -1,0 +1,161 @@
+@model User
+
+<head>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PeopleForPeople.styles.css" asp-append-version="true" />
+    
+</head>
+<header class="HEADER">
+        <nav class="nav-head">
+            <div class="container-fluid HEADER">
+                <a class="navbar-brand pfp" asp-area="" asp-controller="Home" asp-action="HomePage">People For People</a>
+            </div>
+        </nav>
+</header>
+
+<div class="container2">
+    <form action="/Register" method="post">
+        <label class="display-4 text-left">Register!</label>
+    <br>
+    <br>
+        <div class="row mb-4">
+            <div class="col-8">
+                <div class="form-outline">
+                    <label class="form-label" asp-for="FirstName" >FirstName: </label>
+                    <input  class="form-control" asp-for="FirstName" placeholder="Your Firstname" />
+                    <span asp-validation-for="FirstName"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-8">
+                <div class="form-outline">
+                    <label class="form-label" asp-for="LastName" >LastName: </label>
+                    <input  class="form-control" asp-for="LastName" placeholder="Your Lastname"/>
+                    <span asp-validation-for="LastName"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-8">
+                <div class="form-outline">
+                    <label class="form-label" asp-for="City" >City: </label>
+                    <select name="City" asp-for="City">
+                        <option>Tirana</option>
+                        <option>Durrës</option>
+                        <option>Vlorë</option>
+                        <option>Elbasan</option>
+                        <option>Shkodër</option>
+                        <option>Fier</option>
+                        <option>Kamëz</option>
+                        <option>Korçë</option>
+                        <option>Berat</option>
+                        <option>Lushnjë</option>
+                        <option>Pogradec</option>
+                        <option>Kavajë</option>
+                        <option>Gjirokastër</option>
+                        <option>Fushë-Krujë</option>
+                        <option>Sarandë</option>
+                        <option>Laç</option>
+                        <option>Kukës</option>
+                        <option>Sukth</option>
+                        <option>Patos</option>
+                        <option>Lezhë</option>
+                        <option>Mamurras</option>
+                        <option>Peshkopi</option>
+                        <option>Kuçovë</option>
+                        <option>Krujë</option>
+                        <option>Vorë</option>
+                        <option>Burrel</option>
+                        <option>Rrëshen</option>
+                        <option>Milot</option>
+                        <option>Divjakë</option>
+                        <option>Gramsh</option>
+                        <option>Bulqizë</option>
+                        <option>Vau i Dejës</option>
+                        <option>Shëngjin</option>
+                        <option>Klos</option>
+                        <option>Ballsh</option>
+                        <option>Shijak</option>
+                        <option>Ura Vajgurore</option>
+                        <option>Rrogozhinë</option>
+                        <option>Librazhd</option>
+                        <option>Cërrik</option>
+                        <option>Manëz</option>
+                        <option>Peqin</option>
+                        <option>Bilisht</option>
+                        <option>Krumë</option>
+                        <option>Përmet</option>
+                        <option>Prrenjas</option>
+                        <option>Delvinë</option>
+                        <option>Orikum</option>
+                        <option>Bajram Curri</option>
+                        <option>Roskovec</option>
+                        <option>Rubik</option>
+                        <option>Tepelenë</option>
+                        <option>Poliçan</option>
+                        <option>Maliq</option>
+                        <option>Çorovodë</option>
+                        <option>Ersekë</option>
+                        <option>Koplik</option>
+                        <option>Pukë</option>
+                        <option>Himarë</option>
+                        <option>Këlcyrë</option>
+                        <option>Memaliaj</option>
+                        <option>Fushë-Arrëz</option>
+                        <option>Bajzë</option>
+                        <option>Krrabë</option>
+                        <option>Selenicë</option>
+                        <option>Konispol</option>
+                        <option>Libohovë</option>
+                        <option>Reps</option>
+                        <option>Fierzë</option>
+                        <option>Krastë</option>
+                        <option>Leskovik</option>
+                        <option>Finiq</option>
+                        <option>Ulëz</option>
+                        <option>Kurbnesh</option>
+                    </select>
+                    @* <input  class="form-control" asp-for="City" placeholder="Your Lastname"/> *@
+                    @* <span asp-validation-for="City"></span> *@
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-8">
+                <div class="form-outline">
+                    <label class="form-label" asp-for="Email" >Email:</label>
+                    <input  class="form-control" asp-for="Email" placeholder="Your Email"/>
+                    <span asp-validation-for="Email"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-8">
+                <div class="form-outline">
+                    <label class="form-label" asp-for="Password" >Password:</label>
+                    <input  class="form-control" asp-for="Password" placeholder="Write a password" />
+                    <span asp-validation-for="Password"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-8">
+                <div class="form-outline">
+                    <label class="form-label" asp-for="Confirm" >Confirm Password:</label>
+                    <input  class="form-control" asp-for="Confirm" placeholder="Rewrite the password" />
+                    <span asp-validation-for="Confirm"></span>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4 col-8">Sign Up Now</button><br>
+        <a href="/Login">Already created an account? Login Here!</a>
+
+    </form>
+</div>
+<img id="logo" src="~/Images/02917c76-8724-4a99-a0f6-23df22d80267-logo-PFP.png"    asp-append-version="true" alt="">

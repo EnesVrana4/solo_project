@@ -1,0 +1,170 @@
+@model Case
+
+<head>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PeopleForPeople.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+</head>
+<header class="HEADER">
+        <nav class="nav-head">
+            <div class="container-fluid HEADER display-flex ">
+                <a class="navbar-brand pfp vertical-align-bottom" asp-area="" asp-controller="Home" asp-action="HomePage">PFP</a>
+                <div class="display-flex vertical-align-middle">
+                    <a href="/Case/Add" class="navbar-brand pfp vertical-align-middle" id="createcase">Report a Case</a>
+                    <a href="/Chats" class="navbar-brand pfp "  id="inbox">
+                        <i class="fa fa-inbox" ></i>
+                    </a>
+                    <a href="/Logout" class="navbar-brand pfp "  id="logout">
+                        <span class="glyphicon glyphicon-log-out" id="logout" ></span>
+                    </a>
+                </div>
+                @* <a class="navbar-brand pfp" asp-area="" asp-controller="Home" asp-action="HomePage">PFP</a> *@
+                
+            </div>
+        </nav>
+</header>
+<div class="BigDiv">
+    <div class="container2 caseadd">
+        <form action="/Case/Add" method="post" enctype="multipart/form-data">
+            <label class="display-5 text-left">Report a Case!</label>
+            <br>
+            <br>
+            <div class="row mb-4">
+                <div class="col-10">
+                    <div class="form-outline">
+                        <label class="form-label"  asp-for="Tittle" >Problem/Case Tittle: </label>
+                        <input  class="form-control" asp-for="Tittle" placeholder="Write the tittle..." name="Tittle" />
+                        <span asp-validation-for="Tittle"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-10">
+                    <div class="form-outline">
+                        <label class="form-label" asp-for="Description">Problem/Case Description: </label>
+                        <textarea class="form-label" asp-for="Description" name="Description" cols="37" rows="4" placeholder="Write the description..."></textarea>
+                        <span asp-validation-for="Description" ></span>
+                    </div>
+                </div>
+            </div>
+             <div class="row mb-4">
+                <div class="col-10">
+                    <div class="form-outline">
+                        <label class="form-label"  asp-for="FamilySurname" >Family Surname: </label>
+                        <input  class="form-control" asp-for="FamilySurname" placeholder="Write family's surname..." name="FamilySurname" />
+                        <span asp-validation-for="FamilySurname"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+            <div class="col-10">
+                <div class="form-outline">
+                    <label class="form-label" asp-for="City" >City: </label>
+                    <select name="City" asp-for="City">
+                        <option>Tirana</option>
+                        <option>Durrës</option>
+                        <option>Vlorë</option>
+                        <option>Elbasan</option>
+                        <option>Shkodër</option>
+                        <option>Fier</option>
+                        <option>Kamëz</option>
+                        <option>Korçë</option>
+                        <option>Berat</option>
+                        <option>Lushnjë</option>
+                        <option>Pogradec</option>
+                        <option>Kavajë</option>
+                        <option>Gjirokastër</option>
+                        <option>Fushë-Krujë</option>
+                        <option>Sarandë</option>
+                        <option>Laç</option>
+                        <option>Kukës</option>
+                        <option>Sukth</option>
+                        <option>Patos</option>
+                        <option>Lezhë</option>
+                        <option>Mamurras</option>
+                        <option>Peshkopi</option>
+                        <option>Kuçovë</option>
+                        <option>Krujë</option>
+                        <option>Vorë</option>
+                        <option>Burrel</option>
+                        <option>Rrëshen</option>
+                        <option>Milot</option>
+                        <option>Divjakë</option>
+                        <option>Gramsh</option>
+                        <option>Bulqizë</option>
+                        <option>Vau i Dejës</option>
+                        <option>Shëngjin</option>
+                        <option>Klos</option>
+                        <option>Ballsh</option>
+                        <option>Shijak</option>
+                        <option>Ura Vajgurore</option>
+                        <option>Rrogozhinë</option>
+                        <option>Librazhd</option>
+                        <option>Cërrik</option>
+                        <option>Manëz</option>
+                        <option>Peqin</option>
+                        <option>Bilisht</option>
+                        <option>Krumë</option>
+                        <option>Përmet</option>
+                        <option>Prrenjas</option>
+                        <option>Delvinë</option>
+                        <option>Orikum</option>
+                        <option>Bajram Curri</option>
+                        <option>Roskovec</option>
+                        <option>Rubik</option>
+                        <option>Tepelenë</option>
+                        <option>Poliçan</option>
+                        <option>Maliq</option>
+                        <option>Çorovodë</option>
+                        <option>Ersekë</option>
+                        <option>Koplik</option>
+                        <option>Pukë</option>
+                        <option>Himarë</option>
+                        <option>Këlcyrë</option>
+                        <option>Memaliaj</option>
+                        <option>Fushë-Arrëz</option>
+                        <option>Bajzë</option>
+                        <option>Krrabë</option>
+                        <option>Selenicë</option>
+                        <option>Konispol</option>
+                        <option>Libohovë</option>
+                        <option>Reps</option>
+                        <option>Fierzë</option>
+                        <option>Krastë</option>
+                        <option>Leskovik</option>
+                        <option>Finiq</option>
+                        <option>Ulëz</option>
+                        <option>Kurbnesh</option>
+                    </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-11">
+                    <div class="form-outline">
+                        <label class="form-label"  asp-for="Address" >Address: </label>
+                        <input  class="form-control" asp-for="Address" placeholder="Write the address..." name="Address" />
+                        <span asp-validation-for="Address"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-control flex-fill mb-0 uploadpic">
+                <label class="form-label" asp-for="Image" >Upload Image</label>
+                <input asp-for="Image" class="form-control" />
+                <span asp-validation-for="Image"></span>
+            </div><br><br>
+
+    
+            
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Post Case</button>
+        </form>
+    </div>    
+</div>
+              <img id="logo" src="~/Images/02917c76-8724-4a99-a0f6-23df22d80267-logo-PFP.png"    asp-append-version="true" alt="">
